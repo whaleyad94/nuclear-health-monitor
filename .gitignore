@@ -1,0 +1,29 @@
+git init
+```
+
+---
+
+## Step 2: Create a .gitignore
+
+You don't want to commit your virtual environment, Jupyter checkpoints, or any sensitive files. Create a `.gitignore` file in the root folder with this content:
+```
+# Virtual environment
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Data files (too large for GitHub)
+data/*.xlsx
+data/*.csv
+data/*.zip
+
+# OS files
+.DS_Store
+Thumbs.db
